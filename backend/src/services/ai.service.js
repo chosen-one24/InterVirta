@@ -148,15 +148,25 @@ async function generatePdfFromHtml(htmlContent) {
 
     console.log("Chrome Path:", puppeteer.executablePath());
 
+    // const browser = await puppeteer.launch({
+    //     executablePath: puppeteer.executablePath(),
+    //     headless: true,
+    //     args: [
+    //         "--no-sandbox",
+    //         "--disable-setuid-sandbox",
+    //         "--disable-dev-shm-usage"
+    //     ]
+    // });
+
     const browser = await puppeteer.launch({
-        executablePath: puppeteer.executablePath(),
-        headless: true,
-        args: [
-            "--no-sandbox",
-            "--disable-setuid-sandbox",
-            "--disable-dev-shm-usage"
-        ]
-    });
+    channel: "chrome",
+    headless: true,
+    args: [
+        "--no-sandbox",
+        "--disable-setuid-sandbox",
+        "--disable-dev-shm-usage",
+    ],
+});
 
 
     const page = await browser.newPage();
