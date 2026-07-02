@@ -139,22 +139,55 @@ Backend
 
 ---
 
+
+
 # 📸 Screenshots
 
-> Add screenshots here
+## 🏠 Landing Page
 
-```
-Dashboard
+![Landing Page](assets/screenshots/landing-page.png)
 
-Interview Report
+---
 
-Resume Generator
+## 🔐 Login
 
-Reports
+![Login](assets/screenshots/login.png)
 
-Profile
-```
+---
 
+## 📊 Dashboard
+
+![Dashboard](assets/screenshots/dashboard.png)
+
+---
+
+## 📝 Interview Input
+
+![Interview Input](assets/screenshots/interview-input.png)
+
+---
+
+## 🤖 AI Interview Report
+
+![AI Interview Report](assets/screenshots/ai-report.png)
+
+---
+
+## 📄 Resume Generator
+
+![Resume Generator](assets/screenshots/resume-generator.png)
+
+---
+
+## 📚 Reports
+
+![Reports](assets/screenshots/reports.png)
+
+---
+
+## 👤 Profile
+
+![Profile](assets/screenshots/profile.png)
 ---
 
 # 🚀 Getting Started
