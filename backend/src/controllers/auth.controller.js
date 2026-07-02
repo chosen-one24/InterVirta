@@ -141,14 +141,12 @@ async function LogoutController(req,res) {
 }
 
 //getme Controller 
-
 async function getMeController(req,res) {
     console.log(req.user);
     const user = await userModel.findById(req.user.id);
     if (!user) {
         return res.status(404).json({ message: "User not found" });
     }
-
     return res.status(200).json({
         message: "details fetched successfully",
         user: {
@@ -157,8 +155,8 @@ async function getMeController(req,res) {
             email: user.email
         }
     })
-
 }
+
 
 
 export const authController = {
@@ -167,3 +165,6 @@ export const authController = {
     LogoutController,
     getMeController
 };
+
+
+
