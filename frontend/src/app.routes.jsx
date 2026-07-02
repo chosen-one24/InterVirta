@@ -9,6 +9,7 @@ import Home from "./features/interview/pages/Home.jsx";
 import Interview from "./features/interview/pages/Interview.jsx";
 import Reports from "./features/interview/pages/Reports.jsx";
 import Profile from "./features/interview/pages/Profile.jsx";
+import Landing from "./features/interview/pages/Landing.jsx";
 
 const protectedRoute = (element) => <Protected><ProtectedLayout>{element}</ProtectedLayout></Protected>;
 
@@ -23,6 +24,10 @@ export const router = createBrowserRouter([
   },
   {
     path: "/",
+    element: <Landing />,
+  },
+  {
+    path: "/dashboard",
     element: protectedRoute(<Dashboard />),
   },
   {
@@ -42,3 +47,4 @@ export const router = createBrowserRouter([
     element: protectedRoute(<Profile />),
   },
 ]);
+

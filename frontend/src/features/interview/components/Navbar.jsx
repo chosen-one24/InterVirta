@@ -3,7 +3,7 @@ import { useAuth } from "../../auth/hooks/useauth.js";
 import logo from "../../../assets/logo.svg";
 
 const navItems = [
-  { label: "Dashboard", to: "/" },
+  { label: "Dashboard", to: "/dashboard" },
   { label: "Prepare", to: "/interview/new" },
   { label: "My Reports", to: "/reports" },
   { label: "Profile", to: "/profile" },
